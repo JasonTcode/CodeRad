@@ -8,6 +8,34 @@
     padding: 1rem;
 }
 
+.navbar.sticky {
+    background: var(--white);
+    box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
+
+.navbar.sticky .navbar-toggler span, 
+.navbar.sticky .navbar-brand,
+.navbar.sticky a {
+    color: var(--font-color-dark);
+}
+
+
+.navbar-toggler {
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+    color: var(--white);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+
 [aria-controls="navbarDropdown"] {
     display: none;
 }
@@ -83,7 +111,7 @@
 }
 
 .why-me {
-    padding: var(--size-50) 0;
+    padding: var(--size-150) 0;
 }
 
 .why-me-wrapper {
@@ -196,7 +224,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #a1ecff 0%, #7dbcff 1
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-    gap: var(--size-18);
+    gap: var(--size-30);
     margin: auto;
     align-items: flex-start;
 }
@@ -343,6 +371,7 @@ footer .footer-top {
 
 footer .footer-col {
     justify-self: center;
+    max-width: 250px;
 }
 
 .footer-top h5 {
